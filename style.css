@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* vh indica la altura del dispositivo, en este caso se esta utilizando el 100% de esa altura*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    /* 50% crea un ciruclo */
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.image .profile_img{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    /* esta propiedad hace que la imagen se acomode a su contenedor, recortandola de ser necesario */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid blue;
+    padding: 3px;
+}
+
+.profile_card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text .name{
+    font-size: 22px;
+    font-weight:500;
+}
+
+.text .job{
+    font-size: 15px;
+    font-weight:400;
+}
+
+.profile_card .media_buttons{
+    display: flex;
+    align-items: center ;
+}
+
+.media_buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: rgb(72, 72, 255);
+    text-decoration: none;
+}
