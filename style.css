@@ -20,6 +20,18 @@ body{
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.profile_card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0; left: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #4444ff;
+
 }
 
 .image{
@@ -39,7 +51,7 @@ body{
     /* esta propiedad hace que la imagen se acomode a su contenedor, recortandola de ser necesario */
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid #4444ff;
     padding: 3px;
 }
 
@@ -62,16 +74,42 @@ body{
 .profile_card .media_buttons{
     display: flex;
     align-items: center ;
+    margin-top: 15px;
 }
 
 .media_buttons .link{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-size: 20px;
     height: 34px;
     width: 34px;
     border-radius: 50%;
     margin: 0 8px;
     background-color: rgb(72, 72, 255);
     text-decoration: none;
+}
+
+.profile_card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4444ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color: #0000be;
 }
